@@ -1,0 +1,47 @@
+[
+  {
+    "address": "0x80193f0",
+    "before": "0320",
+    "after": "0420"
+  },
+  {
+    "address": "0x8042d20",
+    "before": "342d0408",
+    "after": "402d0408"
+  },
+  {
+    "address": "0x8042d30",
+    "before": "342d0408",
+    "after": "402d0408"
+  },
+  {
+    "address": "0x8042d40",
+    "before": "464d000000",
+    "after": "4c53420000"
+  },
+  {
+    "address": "0x8046a50",
+    "before": "aff30080",
+    "after": "00f001b8"
+  },
+  {
+    "address": "0x806fc22",
+    "before": "0ed1",
+    "after": "0ed3"
+  },
+  {
+    "address": "0x806f948",
+    "before": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "after": "0501050105010501050105010501ffff05010501050105010501ffff05010501050105010501ffff05010501050105010501ffff05010501050105010501ffff05010501050105010501ffff05010501050105010501ffff05010501050105010501ffff05010501050105010501ffffffffffffffff0501050105010501050105010501"
+  },
+  {
+    "address": "0x806fb54",
+    "before": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "after": "0000000000000000000000000000ffff00000000000000000000ffff00000000000000000000ffff00000000000000000000ffff00000000000000000000ffff00000000000000000000ffff00000000000000000000ffff00000000000000000000ffff00000000000000000000ffffffffffffffff0000000000000000000000000000"
+  },
+  {
+    "address": "0x806fa00",
+    "before": "96f8483113f00303022b2ed12de9bf5083b0454501d01c4f00e01c4fd7f800c0cdf800c004f12100992106220b23baf771fed7f804c0cdf800c004f121009f2106220b23baf766fed7f808c0cdf800c004f12100a52107220b23baf75bfe03b0bde8bf5096f84831704796f84831704700f6060884f6060808f70608a4f7060828f80608acf806087cfa060870fa0608ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "after": "96f8483113f00303022b33d32de9bf5083b0032b05d0454501d0244f06e0244f04e0454501d0234f00e0234fd7f800c0cdf800c004f12100992106220b23baf769fed7f804c0cdf800c004f121009f2106220b23baf75efed7f808c0cdf800c004f12100a52107220b23baf753fe03b0bde8bf5096f84831704700bf00f6060884f6060808f70608a4f7060828f80608acf8060848f9060884f6060808f7060854fb060828f80608acf8060888fa06087cfa0608a0fa060894fa0608"
+  }
+]

@@ -1,0 +1,11 @@
+work/
+build/
+*.bin
+*.elf
+*.map
+*.o
+*.d
+.DS_Store
+ref/
+__pycache__/
+*.pyc
