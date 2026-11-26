@@ -1,0 +1,66 @@
+{
+  "parent": "RT950_R5_RadMod_GE_REG30_SILENCE_S9_ZERO_OFFSET_BENCH_UNTESTED.BTF",
+  "parent_sha256": "a67083ef9a129b46c0966019003c0910c5700b1a155cc20b62e985ad1df1d745",
+  "output": "RT950_R5_RadMod_GE_REG30_SILENCE_S10_USB_LSB_BENCH_UNTESTED.BTF",
+  "sha256": "8264d409661f2307846763a91ae5783eaac42986b4cba97a87399380aabf7659",
+  "size": 455680,
+  "changed": 196,
+  "patches": [
+    {
+      "address": "0x8070f60",
+      "size": 88
+    },
+    {
+      "address": "0x80704ac",
+      "size": 84
+    },
+    {
+      "address": "0x807044e",
+      "size": 4
+    },
+    {
+      "address": "0x80637a8",
+      "size": 2
+    },
+    {
+      "address": "0x80716cc",
+      "size": 4
+    },
+    {
+      "address": "0x80716fa",
+      "size": 2
+    },
+    {
+      "address": "0x807171e",
+      "size": 4
+    },
+    {
+      "address": "0x8071252",
+      "size": 4
+    },
+    {
+      "address": "0x807133c",
+      "size": 4
+    },
+    {
+      "address": "0x807139c",
+      "size": 2
+    },
+    {
+      "address": "0x80713a0",
+      "size": 2
+    },
+    {
+      "address": "0x80713a2",
+      "size": 8
+    }
+  ],
+  "lsb_candidates": 42,
+  "lsb_physical_codes": [
+    111,
+    70
+  ],
+  "lsb_synth_delta_hz": -500,
+  "hardware_tested": false,
+  "cycle_timing_verified": false
+}

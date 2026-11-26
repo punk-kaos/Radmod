@@ -1,0 +1,14 @@
+{'fixture': 'radio_mic_raw', 'mode': 'USB', 'samples': 65530, 'min_code': 0, 'max_code': 77, 'wanted_pct': np.float64(28.782957956734478), 'rejection_dB': np.float64(16.5303315462854)}
+{'fixture': 'radio_mic_raw', 'mode': 'LSB', 'samples': 65530, 'min_code': 70, 'max_code': 111, 'wanted_pct': np.float64(28.98422550433651), 'rejection_dB': np.float64(16.709526958458646)}
+{'fixture': 'voice_awb_raw', 'mode': 'USB', 'samples': 44840, 'min_code': 0, 'max_code': 77, 'wanted_pct': np.float64(44.62296869996261), 'rejection_dB': np.float64(15.592251770480756)}
+{'fixture': 'voice_awb_raw', 'mode': 'LSB', 'samples': 44840, 'min_code': 70, 'max_code': 111, 'wanted_pct': np.float64(44.83982922320911), 'rejection_dB': np.float64(15.785184332725386)}
+digital_silence 0 mean Hz -0.05121875 codes [76 77]
+digital_silence 1 mean Hz 0.0558333333332774 codes [70 71]
+400 0 400.0 43.078613406557764
+400 1 -400.0 43.63384660570941
+1000 0 1000.0 46.084954351006445
+1000 1 -1000.0 129.74546671612478
+2000 0 2000.0 53.15680970771349
+2000 1 -2000.0 46.911276793494814
+2600 0 2600.0 47.407706267880755
+2600 1 -2600.0 45.646857997367064

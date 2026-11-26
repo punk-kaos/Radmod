@@ -1,0 +1,1 @@
+PASS 12656 linked instruction-path/frame checks, plus four repeated 2956-sample state traces. Ordinary/restoration paths <= 75 instruction slots, switching path <= 84 (IT-skipped slots counted, helper modeled). No MCU cycle accuracy.

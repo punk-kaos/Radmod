@@ -1,0 +1,59 @@
+
+helpers.elf:	file format elf32-littlearm
+
+Disassembly of section .freq:
+
+0807044e <.freq>:
+ 807044e: f2a0 0032    	subw	r0, r0, #0x32
+
+Disassembly of section .helpers:
+
+08070f60 <select_table>:
+ 8070f60: f7ff fa8b    	bl	0x807047a <.freq+0x2c>  @ imm = #-0xaea
+ 8070f64: 2903         	cmp	r1, #0x3
+ 8070f66: bf0c         	ite	eq
+ 8070f68: 4c11         	ldreq	r4, [pc, #0x44]         @ 0x8070fb0 <noadc+0x14>
+ 8070f6a: 4c12         	ldrne	r4, [pc, #0x48]         @ 0x8070fb4 <noadc+0x18>
+ 8070f6c: bf0c         	ite	eq
+ 8070f6e: f04f 0c2a    	moveq.w	r12, #0x2a
+ 8070f72: f04f 0c4e    	movne.w	r12, #0x4e
+ 8070f76: 2500         	movs	r5, #0x0
+ 8070f78: f000 bbaa    	b.w	0x80716d0 <publish+0x325> @ imm = #0x754
+
+08070f7c <finish>:
+ 8070f7c: f1bc 0f2a    	cmp.w	r12, #0x2a
+ 8070f80: bf08         	it	eq
+ 8070f82: f1c0 006f    	rsbeq.w	r0, r0, #0x6f
+ 8070f86: e8bd 0700    	pop.w	{r8, r9, r10}
+ 8070f8a: bdf0         	pop	{r4, r5, r6, r7, pc}
+
+08070f8c <early>:
+ 8070f8c: f7ff fa75    	bl	0x807047a <.freq+0x2c>  @ imm = #-0xb16
+ 8070f90: 2903         	cmp	r1, #0x3
+ 8070f92: bf0c         	ite	eq
+ 8070f94: 206f         	moveq	r0, #0x6f
+ 8070f96: 2000         	movne	r0, #0x0
+ 8070f98: f000 ba07    	b.w	0x80713aa <noadc_resume+0x153> @ imm = #0x40e
+
+08070f9c <noadc>:
+ 8070f9c: f7ff fa6d    	bl	0x807047a <.freq+0x2c>  @ imm = #-0xb26
+ 8070fa0: 2903         	cmp	r1, #0x3
+ 8070fa2: bf0c         	ite	eq
+ 8070fa4: 206f         	moveq	r0, #0x6f
+ 8070fa6: 2000         	movne	r0, #0x0
+ 8070fa8: 7360         	strb	r0, [r4, #0xd]
+ 8070faa: f000 b954    	b.w	0x8071256 <noadc+0x2ba> @ imm = #0x2a8
+ 8070fae: bf00         	nop
+ 8070fb0: ac 04 07 08  	.word	0x080704ac
+ 8070fb4: a4 50 06 08  	.word	0x080650a4
+
+Disassembly of section .warm:
+
+080713a2 <.warm>:
+ 80713a2: f5b9 7f80    	cmp.w	r9, #0x100
+ 80713a6: f4ff adf1    	blo.w	0x8070f8c <early>       @ imm = #-0x41e
+
+Disassembly of section .cmp:
+
+080716fa <.cmp>:
+ 80716fa: 4565         	cmp	r5, r12

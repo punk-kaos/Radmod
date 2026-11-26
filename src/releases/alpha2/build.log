@@ -1,0 +1,20 @@
+{
+  "baseline": "RadMod V1.0Alpha2",
+  "parent": "RT950_R5_RadMod_GE_REG30_SILENCE_S10_USB_LSB_BENCH_UNTESTED.BTF",
+  "parent_sha256": "8264d409661f2307846763a91ae5783eaac42986b4cba97a87399380aabf7659",
+  "output": "RT950_R5_RadMod_V1.0Alpha2.BTF",
+  "output_sha256": "c6f6d66eccf5e05a5bc059da4ad7912b8f9306699a685cdfc492749de0c10ec4",
+  "bytes": 455680,
+  "about_text": "RadMod\r\nV1.0Alpha2\r\nRT950 Pro\r\n",
+  "decoded_changed_bytes": 1,
+  "encoded_changed_bytes": 1,
+  "changed_decoded_offset": "0x6caf1",
+  "changed_flash_address": "0x806faf1",
+  "changed_encoded_offset": "0x6cef1",
+  "old_byte": "0x31",
+  "new_byte": "0x32",
+  "about_pointer_unchanged": true,
+  "all_other_bytes_unchanged": true,
+  "parent_user_approved": true,
+  "version_only_image_hardware_tested": false
+}
