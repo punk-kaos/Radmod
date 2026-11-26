@@ -1,5 +1,6 @@
 work/
 build/
+stock/*.BTF
 *.bin
 *.elf
 *.map
@@ -9,3 +10,4 @@ build/
 ref/
 __pycache__/
 *.pyc
+.venv/

@@ -88,6 +88,21 @@ python3 tools/patch.py stock/RT_950Pro_V0.29_260617.BTF \
 
 Use `build/radmod.patch.json` instead after building modified source. The patcher checks the exact OEM digest, patch boundaries, old bytes, encoding round-trip and final digest. It refuses to overwrite its input. It patches files only; it does not connect to or flash a radio.
 
+### Inspecting the BTF container
+
+`tools/btf.py` decodes and re-encodes the BTF container and reports its layout:
+
+```sh
+python3 tools/btf.py info   RT950_R5_RadMod_V1.0Alpha1.BTF
+python3 tools/btf.py decode RT950_R5_RadMod_V1.0Alpha1.BTF build/alpha1.rom
+python3 tools/btf.py encode build/alpha1.rom build/rebuilt.BTF --template stock/RT_950Pro_V0.29_260617.BTF
+python3 tools/btf.py verify build/*.BTF
+python3 tools/btf.py diff   stock/RT_950Pro_V0.29_260617.BTF build/RT950_R5_RadMod_V1.0Alpha1.BTF
+python3 tools/btf.py scan   .
+```
+
+The format is documented in `docs/btf-format.md`. The 1 KiB key block is fixed per model and the body uses a repeating 128-byte keystream with `0x00`/`0xFF` passthrough. It is obfuscation, not cryptographic protection. `diff` classifies changed bytes as active OEM code, OEM `0xFF` caves, or new flash beyond the OEM image.
+
 ### Development builds
 
 ```sh

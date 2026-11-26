@@ -10,6 +10,6 @@ dev:
 patch:
 	$(PYTHON) tools/patch.py "$(OEM)" "$(OUT)/radmod.patch.json" "$(OUT)/RT950_R5_RadMod_patched.BTF"
 test:
-	$(PYTHON) tests/test_patcher.py
+	$(PYTHON) -m unittest discover -s tests -p 'test_*.py' -v
 clean:
 	rm -rf build
