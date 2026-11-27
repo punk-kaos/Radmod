@@ -15,12 +15,12 @@ RadMod is an aftermarket firmware modification for the Radtel RT-950 Pro that br
 
 ### AM
 
-- Experimental live-voice AM transmission.
+- Experimental live-voice AM transmission with pulse-density blanking and improved mirror suppression.
 - Retains the radio's original AM reception.
 
 ### CAT control
 
-- Computer control using a subset of the Yaesu FT-817 CAT protocol.
+- Wired and Bluetooth LE computer control using a subset of the Yaesu FT-817 CAT protocol. One CAT transport owns the session at a time.
 - Read and set frequency and modulation mode.
 - VFO selection.
 - Signal strength and transmit status reporting.
@@ -42,7 +42,7 @@ RadMod is an aftermarket firmware modification for the Radtel RT-950 Pro that br
 
 ## Development status
 
-USB and LSB transmission have been tested on physical radios. AM transmission is working in an experimental development build and is not yet part of the main baseline.
+USB and LSB transmission have been tested on physical radios. Experimental AM transmission is now included in the hardware-confirmed ACC1500 development baseline. I400x1 adaptive duty remains a separate hardware-untested experiment.
 
 SSB transmission still has residual carrier and unwanted spectral components. SSB reception does not yet provide independent receive-side sideband rejection. CAT compatibility is partial, and remote PTT is currently limited to FM.
 
@@ -53,6 +53,18 @@ RadMod is based on the original V0.29 firmware for the Radtel RT-950 Pro. No har
 Keep a known-working firmware image available for recovery. Experimental transmit modes should be evaluated on a dummy load before on-air use.
 
 ## Building
+
+### Current Alpha2 development baseline
+
+```sh
+python3 build_alpha2.py
+python3 build_alpha2.py --target i400x1
+# or make alpha2 / make alpha2-experimental
+```
+
+See [Alpha2 development history and build notes](docs/alpha2-development.md). Each stage checks its archived firmware digest. Experimental transmit modes require conducted bench testing.
+
+### Legacy stock-to-Alpha1 build
 
 ### Requirements
 
@@ -114,7 +126,7 @@ Development builds produce `RT950_R5_RadMod_DEV_UNTESTED.BTF`. This allows chang
 ## Roadmap
 
 - Further improve SSB voice quality and spectral purity.
-- Refine AM transmission and integrate it into the main firmware.
+- Further reduce AM adjacent-channel interference and verify adaptive duty on hardware.
 - Improve SSB reception and sideband selectivity.
 - Expand CAT support and third-party software compatibility.
 

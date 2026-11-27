@@ -1,0 +1,57 @@
+[
+  {
+    "target": "bt-cat",
+    "output": "RT950_R5_RadMod_Alpha2_BT_CAT_R1_UNTESTED.BTF",
+    "sha256": "60970d6cb6dfd56dfe075018c41f3ec1a9ab071f7607db70536c7f5c50920d03",
+    "folder": "src/cat/bt_cat_r1",
+    "source": "transport.S",
+    "linker": "link.ld",
+    "address": 134615660,
+    "size": 356,
+    "status": "hardware-confirmed"
+  },
+  {
+    "target": "bc203",
+    "output": "RT950_R5_RadMod_Alpha2_AM_BC203_R1_UNTESTED.BTF",
+    "sha256": "41f8a412a9b352e477c1986103eab40c0125600ab8fdcea6ca425c9f313af9da",
+    "folder": "src/modulation/am_bc203",
+    "source": "bc203.c",
+    "linker": "bc203.ld",
+    "address": 134619008,
+    "size": 116,
+    "status": "hardware-confirmed"
+  },
+  {
+    "target": "pair-r2",
+    "output": "RT950_R5_RadMod_Alpha2_AM_NB16_PAIR_R2_UNTESTED.BTF",
+    "sha256": "15451d1a8765bdbd5e1f501fb1951ad14daac647e35d2be66f7235eb34bbd698",
+    "folder": "src/modulation/am_nb16_pair_r2",
+    "source": "irq.S",
+    "linker": "irq.ld",
+    "address": 134616724,
+    "size": null,
+    "status": "hardware-confirmed"
+  },
+  {
+    "target": "acc1500",
+    "output": "RT950_R5_RadMod_Alpha2_AM_ACC1500_R1_UNTESTED.BTF",
+    "sha256": "eeb9ba9811e3a35f403aa475ee40b49c6f3eac1502e940a16a4834934603f1f8",
+    "folder": "src/modulation/am_acc1500",
+    "source": "irq.S",
+    "linker": "irq.ld",
+    "address": 134616724,
+    "size": 336,
+    "status": "official development baseline"
+  },
+  {
+    "target": "i400x1",
+    "output": "RT950_R5_RadMod_Alpha2_AM_I400x1_R1_UNTESTED.BTF",
+    "sha256": "1b6ddf6288a686b76c19916d479b7d9b3eb907b8b0831ce18fbde0a5fec1e97f",
+    "folder": "src/modulation/am_i400x1",
+    "source": "irq.S",
+    "linker": "irq.ld",
+    "address": 134616724,
+    "size": 344,
+    "status": "hardware untested"
+  }
+]

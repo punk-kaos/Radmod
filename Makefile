@@ -13,3 +13,9 @@ test:
 	$(PYTHON) -m unittest discover -s tests -p 'test_*.py' -v
 clean:
 	rm -rf build
+
+.PHONY: alpha2 alpha2-experimental
+alpha2:
+	$(PYTHON) build_alpha2.py --out "$(OUT)/alpha2"
+alpha2-experimental:
+	$(PYTHON) build_alpha2.py --target i400x1 --out "$(OUT)/alpha2-experimental"
