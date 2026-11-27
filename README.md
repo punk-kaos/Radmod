@@ -42,9 +42,8 @@ RadMod is an aftermarket firmware modification for the Radtel RT-950 Pro that br
 
 ## Development status
 
-USB and LSB transmission have been tested on physical radios. Experimental AM transmission is now included in the hardware-confirmed ACC1500 development baseline. I400x1 adaptive duty remains a separate hardware-untested experiment.
+USB and LSB transmission have been tested on physical radios. Experimental AM transmission is now included.
 
-SSB transmission still has residual carrier and unwanted spectral components. SSB reception does not yet provide independent receive-side sideband rejection. CAT compatibility is partial, and remote PTT is currently limited to FM.
 
 ## Compatibility
 
@@ -123,12 +122,6 @@ python3 build.py --dev --oem stock/RT_950Pro_V0.29_260617.BTF --out build/dev
 
 Development builds produce `RT950_R5_RadMod_DEV_UNTESTED.BTF`. This allows changed stage/final digests but retains local preimage and cave checks. Some historical overlays have fixed ROM entry addresses and dependencies on exact machine instructions in prior stages. Changes to code layout can therefore require coordinated hook/linker changes and will not automatically be safe. A new image hash is not proof of correct hardware behavior. Use a fresh output folder for experimental builds. `make test` runs the independent patcher unit tests. The build also runs gate, RX and AM host regressions.
 
-## Roadmap
-
-- Further improve SSB voice quality and spectral purity.
-- Further reduce AM adjacent-channel interference and verify adaptive duty on hardware.
-- Improve SSB reception and sideband selectivity.
-- Expand CAT support and third-party software compatibility.
 
 ## Contributing
 
